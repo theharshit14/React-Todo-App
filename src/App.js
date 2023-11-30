@@ -17,14 +17,19 @@ function App() {
   return (
     <div className="main-container">
       <div className="center-container">
+        <h1 className='heading'>Todo List</h1>
+        <div style={{padding:'15px'}}>
         <Todoinput addList={addList}/>
         <h1 className="app-heading">Tasks</h1>
         <hr />
+        
         {listTodo.map((listItem,i)=>{
           return (
             <Todolist key={i} index={i} item={listItem} deletelistItem={deletelistItem}/>
           )
         })}
+        </div>
+  
       </div>
     </div>
   )

@@ -21,6 +21,7 @@ body{
   width: 350px;
   background-color: rgb(201, 209, 216);
   border-radius: 10px;
+  box-shadow: 0 0 15px 1px;
 }
 .app-heading{
   padding: 4px;

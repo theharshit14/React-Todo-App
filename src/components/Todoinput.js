@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Todoinput(props) {
-    const [inputText,setinputText] = useState('');
+    const [inputText, setinputText] = useState('');
     const handleEnterPress  = (e)=>{
       if(e.keyCode===13){
         props.addList(inputText); setinputText("");
